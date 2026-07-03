@@ -3,11 +3,14 @@ import json
 from pathlib import Path
 import requests
 from flask import Flask, request, jsonify
+from dotenv import load_dotenv
 
+
+load_dotenv()
 app = Flask(__name__)
 
 # ── Configuration ──
-API_KEY = os.environ.get("OPENROUTER_API_KEY", "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") #
+API_KEY = os.environ.get("OPENROUTER_API_KEY") #
 MODEL = "anthropic/claude-3-haiku"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
