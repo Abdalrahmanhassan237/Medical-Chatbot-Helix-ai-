@@ -46,6 +46,7 @@ def triage():
         '{\n'
         '  "extracted_symptoms": ["symptom1"],\n'
         '  "urgency_level": "Low | Medium | High | Critical",\n'
+        '  "recommended_specialty": "اسم التخصص الطبي باللغة العربية",\n'
         '  "chat_response": "ردك باللغة العربية"\n'
         '}'
     )
